@@ -1,0 +1,10 @@
+import { Router } from 'express';
+
+const routes = Router();
+
+routes.get('/health', (request, response) => {
+  return response.json({ status: 'ok', message: 'Hello Dev! Iam Alive!' });
+});
+
+// Correção aqui: exporta as rotas criadas com o nome esperado pelo server.ts
+export { routes as healthRoutes };
