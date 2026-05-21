@@ -55,7 +55,8 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "noImplicitAny": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": [
     "node_modules",
