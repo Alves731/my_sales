@@ -10,7 +10,7 @@ interface IUpdateProduct {
 }
 
 export default class UpdateProductService {
-  async excute({ id, name, price, quantity } : IUpdateProduct): Promise<Product> {
+  async execute({ id, name, price, quantity } : IUpdateProduct): Promise<Product> {
     const product = await productsRepositories.findById(id);
 
     if (!product) {
