@@ -1,5 +1,6 @@
 import productsRouter from '@modules/product/routes/ProductRoutes.js';
 import { Router } from 'express';
+import { celebrate, Joi, Segments } from 'celebrate';
 
 const routes = Router();
 

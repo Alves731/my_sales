@@ -8,7 +8,7 @@
     "lint": "eslint . ",
     "lint:fix": "eslint . --fix",
     "typeorm": "tsx -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "migration:create": "tsx -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:create",
+    "migration:create": "tsx -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:create ./src/shared/typeorm/migrations/$npm_config_name",
     "migration:run": "tsx -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/shared/typeorm/data-source.ts"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
     "@eslint/js": "^10.0.1",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/joi": "^17.2.2",
     "@types/node": "^25.6.2",
     "@typescript-eslint/eslint-plugin": "^8.59.2",
     "@typescript-eslint/parser": "^8.59.2",
