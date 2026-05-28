@@ -32,6 +32,7 @@
     "typescript-eslint": "^8.59.2"
   },
   "dependencies": {
+    "celebrate": "^15.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^4.22.2",
