@@ -17,7 +17,8 @@ export default class CreateUserService {
     if (emailExists) {
       throw new AppError('Email address already used.', 409)
     }
-
+//ao colocar o "numero" vai dar erro istalar npm install bcrypt
+//npm install --save-dev @types/bcrypt  e import { hash } from 'bcrypt'
     const hashedPassword = await hash(password, 10);
 
     const user = usersRepositories.create({
