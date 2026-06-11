@@ -12,7 +12,7 @@ routes.get('/health', (request, response) => {
 });
 routes.use('/products', productsRouter)
 routes.use('/users', userRouter)
-routes.use('sessions', sessionsRouter)
+routes.use('/sessions', sessionsRouter)
 
 // Correção aqui: exporta as rotas criadas com o nome esperado pelo server.ts
 export { routes as healthRoutes };
